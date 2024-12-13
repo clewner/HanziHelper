@@ -39,7 +39,7 @@ PaddleOCR first scans the entire given image. Then for all of the locations clas
 Bounding boxes that are very close to each other or overlapping are merged if they don't contain Chinese characters. This is because long English text is often split into multiple lines which should be classifed as the same blurb of text, while different Chinese character bounding boxes in vocabulary textbooks are generally separate phrases. Chinese characters are also a lot less condensed than English ones, meaning they will generally be more prone to merging with each other if the criteria for merging is strictly proximity based.
 
 ### Boxes are then grouped into rows
-Items with similar y-values are placed in the same rows. Each row is sorted by x-value, and the set of rows are sorted by y-value.
+Items with similar y-values are placed in the same row. Each row is sorted by x-value, and the set of rows are sorted by y-value.
 
 ### Second phase bounding box merging
 Bounding boxes that are close together (with a less strict threshold than the first merging phase), where one is in a row by itself, are analyzed. If by merging these two boxes, both become closer to a row (that consists of elements different than those two), then the merge is performed regardless of character type. This is because there are sometimes multiline Chinese phrases that will be classified as separate ones. If two close elements have a row of other elements right between them, it is likely they are actually the same element.
