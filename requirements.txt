@@ -1,0 +1,9 @@
+paddlepaddle
+paddleocr
+pypinyin
+tkintertable
+setuptools
+PILLOW
+easyocr
+tk
+pyinstaller
