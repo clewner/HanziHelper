@@ -10,6 +10,10 @@ Example image of vocabulary table:
 # Download
 > I've opted to use pyinstaller to turn the script into an executable. This makes it easier for less python-savvy people to use at the cost of a relatively long start-up time.
 
+You can download the executable [here](https://drive.google.com/drive/folders/1kfTHmyeBAZNOsjWZndH5LheEOA3cAB54?usp=sharing).
+
+For more python oriented people, you can clone the repository, install the packages outlined in requirements.txt, and then simply run flashcard_gui.py.
+
 
 # Usage
 1. Check off whether you are using traditional or simplified characters
